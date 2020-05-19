@@ -1,0 +1,52 @@
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0      
+    
+$animation: all 300ms
+
+.container
+    width: 100%
+    margin: 0 auto
+
+.row
+    width: 100% 
+    display: flex
+    flex-wrap: wrap
+    margin-left: auto
+    margin-right: auto
+    &.main-row
+        width: calc(100% - 20px)
+        padding-top: 20px
+        padding-bottom: 20px
+
+.card
+    min-height: 200px
+    border: 1px solid gray
+    width: 100%
+    max-width: 350px
+    margin-left: auto
+    margin-right: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: $animation
+    h2
+        font-size: 50px
+        font-weight: bold
+        transition: $animation
+        &:hover
+            cursor: pointer
+    &:hover
+        background: gray
+        transform: scale(1.06)
+        cursor: pointer
+        h2
+            color: white
+
+
+$cols: 18
+@for $i from 1 through $cols
+    .col-#{$i}
+        width: 100% / $cols * $i

@@ -1,0 +1,19 @@
+{
+  "name": "js.local",
+  "version": "1.0.0",
+  "description": "JS Proyects",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch public_html/sass/main.sass public_html/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShockyKoba/js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShockyKoba/js/issues"
+  },
+  "homepage": "https://github.com/ShockyKoba/js#readme"
+}
